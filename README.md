@@ -34,7 +34,7 @@ The prefix function generates this seed text, which I call "prefix" throughout t
 pseudo-randomly assembles a variety of subjects (I, We, Our household), verbs (hate, love, despise, adore), adverbs, 
 adjectives, etc. 
 
-The body function initiates the gpt-2 model to generate a full response. In the response function, I use Vader Sentiment Analyzer
+- The body function initiates the gpt-2 model to generate a full response. In the response function, I use Vader Sentiment Analyzer
 to continually update the gpt-2-generated response until it falls within the desired sentiment threshold. Vader assesses sentient
 on a scale from -1 to 1,  negative to positive sentiment. I chose my threshold as .5, although Vader considers the sentiment
 to be positive or negative based on scores exceeding |.5|. The reply function then calls that response function with appropriate parameters
