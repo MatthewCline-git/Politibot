@@ -51,7 +51,7 @@ def prefix(subject, type, agree=True, extended_prefix=True):
 
     return f'I {adverb} {emotion}! {text}'
 
-except BaseException as e:
+  except BaseException as e:
     print('failed on_status,', str(e))
 
     time.sleep(3)
